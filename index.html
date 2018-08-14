@@ -84,8 +84,14 @@ body {
    <!-- 即時公告開始 -->
    <div class="container text-white">
      <h1>公告/Announcement</h1>
-   <div class="alert alert-danger" role="alert">
-     ※烘焙訪公告: 烘焙坊於 2018/7/20 (五) 起訂定每周五為固定公休日!!
+   <div class="alert alert-danger text-center" role="alert">
+     公告: 烘焙坊於 2018/08/20 (一) 起營業時間調整為<br>
+     上午12:00 至 下午20:00<br>
+     <br>
+     ＊每周五為固定公休日＊<br>
+     <br>
+     因數量有限!! 歡迎多加利用 Line 或 Facebook Messenger 詢問預定保留<br>
+     ＊詢問預定保留時間為每日下午3點截止＊<br>
    </div>
  </div>
    <!-- 即時公告結束 -->
@@ -173,7 +179,8 @@ body {
      <div class="container">
      <div class="row align-items-center">
        <div class="col-sm">
-         <img src="QRCode.PNG" alt="" class="rounded">
+         <a href="https://line.me/R/ti/p/%40ezs0882c" target="_blank">
+           <img src="https://scdn.line-apps.com/n/line_add_friends/btn/en.png" height="36" border="0" alt="" class="rounded"></a>
          <a href="https://www.facebook.com/BBPTaichung/" target="_blank">
            <img src="FB.png" alt="" class="rounded"></a>
            <a href="https://www.instagram.com/brezelbakeryproject/" target="_blank">
@@ -197,6 +204,26 @@ body {
    </a>
    <!-- 相關連結結束 -->
 
+   <!-- Facebook 聊天外掛開始 -->
+   <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/zh_TW/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="173722073446248"
+  theme_color="#6699cc"
+  logged_in_greeting="焙索歐式烘焙坊 BrezelBakeryProject"
+  logged_out_greeting="焙索歐式烘焙坊 BrezelBakeryProject">
+</div>
+   <!-- Facebook 聊天外掛結束 -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
